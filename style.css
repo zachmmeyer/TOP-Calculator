@@ -1,15 +1,26 @@
+body {
+  background: black;
+}
+
 .calcContainer {
-  background: lightgray;
+  background: dimgray;
   width: 500px;
-  height: 600px;
+  height: 650px;
   display: grid;
-  grid-gap: 20px 20px;
+  grid-gap: 10px 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
 }
 
 .calcClass {
   background: darkgray;
+  margin: 10px;
 }
 
 .calcDisplay {
