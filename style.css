@@ -1,0 +1,23 @@
+.calcContainer {
+  background: lightgray;
+  width: 500px;
+  height: 600px;
+  display: grid;
+  grid-gap: 20px 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.calcClass {
+  background: darkgray;
+}
+
+.calcDisplay {
+  grid-column: 1 / 5;
+}
+
+.calcButton {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
