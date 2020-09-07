@@ -16,11 +16,13 @@ body {
   right: 0;
   margin: auto;
   position: absolute;
+  border-radius: 10px;
 }
 
 .calcClass {
   background: darkgray;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .calcDisplay {
