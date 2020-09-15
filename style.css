@@ -24,14 +24,14 @@ body {
   border-radius: 5px;
 }
 
-.calcQueue, .calcDisplay {
+.calcQueue,
+.calcDisplay {
   grid-column: 1 / 5;
   display: flex;
   align-items: center;
   justify-content: right;
   text-align: right;
-  font-family: 'Courier New', Courier, monospace;
-  
+  font-family: "Courier New", Courier, monospace;
 }
 
 .calcQueue {
@@ -39,7 +39,6 @@ body {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   font-size: 18px;
-
 }
 
 .calcDisplay {
