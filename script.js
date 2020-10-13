@@ -14,11 +14,6 @@ function divide(a, b) {
   return a / b;
 }
 
-function buttonKey(key) {
-  let keyPress = new KeyboardEvent("keydown", { key: key });
-  document.dispatchEvent(keyPress);
-}
-
 function combineValue(currentNumber, inputNumber) {
   if (currentNumber === 0) {
     return inputNumber;
