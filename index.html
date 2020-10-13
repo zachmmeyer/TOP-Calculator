@@ -9,12 +9,17 @@
   <body>
     <div class="calcContainer">
       <div class="calcQueue calcClass"></div>
-      <div class="calcDisplay calcClass">Placeholder</div>
+      <div class="calcDisplay calcClass"></div>
       <button class="buttonCE calcButton calcClass">CE</button>
       <button class="buttonC calcButton calcClass">C</button>
       <button class="buttonBaskspace calcButton calcClass">&laquo</button>
       <button class="buttonDivide calcButton calcClass">/</button>
-      <button class="buttonSeven calcButton calcClass">7</button>
+      <button
+        class="buttonSeven calcButton calcClass"
+        onclick="new KeyboardEvent('keydown', {'key':'7'});"
+      >
+        7
+      </button>
       <button class="buttonEight calcButton calcClass">8</button>
       <button class="buttonEight calcButton calcClass">9</button>
       <button class="buttonEight calcButton calcClass">X</button>
