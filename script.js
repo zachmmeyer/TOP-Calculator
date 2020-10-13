@@ -17,3 +17,11 @@ function divide(a, b) {
 }
 
 displayedNumber.textContent = "Hello";
+
+window.addEventListener("keydown", function (e) {
+  if (Number(e.key) >= 0 || Number(e.key) <= 9) {
+    displayedNumber.textContent = e.key;
+  }
+});
+
+//TODO Make function to add number to string or array
