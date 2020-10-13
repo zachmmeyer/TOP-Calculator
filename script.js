@@ -14,6 +14,11 @@ function divide(a, b) {
   return a / b;
 }
 
+function buttonPress(keyParam) {
+  const evt = new KeyboardEvent("keydown", { key: keyParam });
+  window.dispatchEvent(evt);
+}
+
 function combineValue(currentNumber, inputNumber) {
   if (currentNumber === 0) {
     return inputNumber;
@@ -34,7 +39,6 @@ function calculator() {
   currentNumberDisplay.textContent = currentNumber;
 
   window.addEventListener("keydown", function (e) {
-    console.log(e);
     if (equationDone === false) {
       if (Number(e.key) >= 0 || (Number(e.key) <= 9 && e.key != " ")) {
         currentNumber = combineValue(currentNumber, e.key);

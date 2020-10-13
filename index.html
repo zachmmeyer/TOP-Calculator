@@ -11,30 +11,96 @@
       <div class="calcQueue calcClass"></div>
       <div class="calcDisplay calcClass"></div>
       <button class="buttonCE calcButton calcClass">CE</button>
-      <button class="buttonC calcButton calcClass">C</button>
+      <button
+        class="buttonC calcButton calcClass"
+        onclick="buttonPress('Escape')"
+      >
+        C
+      </button>
       <button class="buttonBaskspace calcButton calcClass">&laquo</button>
-      <button class="buttonDivide calcButton calcClass">/</button>
+      <button
+        class="buttonDivide calcButton calcClass"
+        onclick="buttonPress('/')"
+      >
+        /
+      </button>
       <button
         class="buttonSeven calcButton calcClass"
-        onclick="new KeyboardEvent('keydown', {'key':'7'});"
+        onclick="buttonPress('7')"
       >
         7
       </button>
-      <button class="buttonEight calcButton calcClass">8</button>
-      <button class="buttonEight calcButton calcClass">9</button>
-      <button class="buttonEight calcButton calcClass">X</button>
-      <button class="buttonFour calcButton calcClass">4</button>
-      <button class="buttonFive calcButton calcClass">5</button>
-      <button class="buttonSix calcButton calcClass">6</button>
-      <button class="buttonMinus calcButton calcClass">-</button>
-      <button class="buttonOne calcButton calcClass">1</button>
-      <button class="buttonTwo calcButton calcClass">2</button>
-      <button class="buttonThree calcButton calcClass">3</button>
-      <button class="buttonPlus calcButton calcClass">+</button>
+      <button
+        class="buttonEight calcButton calcClass"
+        onclick="buttonPress('8')"
+      >
+        8
+      </button>
+      <button
+        class="buttonEight calcButton calcClass"
+        onclick="buttonPress('9')"
+      >
+        9
+      </button>
+      <button
+        class="buttonEight calcButton calcClass"
+        onclick="buttonPress('*')"
+      >
+        X
+      </button>
+      <button
+        class="buttonFour calcButton calcClass"
+        onclick="buttonPress('4')"
+      >
+        4
+      </button>
+      <button
+        class="buttonFive calcButton calcClass"
+        onclick="buttonPress('5')"
+      >
+        5
+      </button>
+      <button class="buttonSix calcButton calcClass" onclick="buttonPress('6')">
+        6
+      </button>
+      <button
+        class="buttonMinus calcButton calcClass"
+        onclick="buttonPress('-')"
+      >
+        -
+      </button>
+      <button class="buttonOne calcButton calcClass" onclick="buttonPress('1')">
+        1
+      </button>
+      <button class="buttonTwo calcButton calcClass" onclick="buttonPress('2')">
+        2
+      </button>
+      <button
+        class="buttonThree calcButton calcClass"
+        onclick="buttonPress('3')"
+      >
+        3
+      </button>
+      <button
+        class="buttonPlus calcButton calcClass"
+        onclick="buttonPress('+')"
+      >
+        +
+      </button>
       <button class="buttonPlMin calcButton calcClass">+/-</button>
-      <button class="buttonZero calcButton calcClass">0</button>
+      <button
+        class="buttonZero calcButton calcClass"
+        onclick="buttonPress('0')"
+      >
+        0
+      </button>
       <button class="buttonDec calcButton calcClass">.</button>
-      <button class="buttonEqual calcButton calcClass">=</button>
+      <button
+        class="buttonEqual calcButton calcClass"
+        onclick="buttonPress('Enter')"
+      >
+        =
+      </button>
     </div>
   </body>
   <script src="script.js"></script>
