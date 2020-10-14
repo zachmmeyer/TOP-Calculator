@@ -10,8 +10,10 @@ function multiply(a, b) {
   return a * b;
 }
 
-function divide(a, b) {
-  return a / b;
+function divide(b, a, currentNumberDisplay) {
+  return b != 0
+    ? a / b
+    : (currentNumberDisplay.textContent = "Oops divide by zero");
 }
 
 function buttonPress(keyParam) {
@@ -62,7 +64,11 @@ function calculator() {
             currentNumber = multiply(currentNumber, queuedNumber);
             break;
           case "/":
-            currentNumber = divide(currentNumber, queuedNumber);
+            currentNumber = divide(
+              currentNumber,
+              queuedNumber,
+              currentNumberDisplay
+            );
             break;
           case "+":
             currentNumber = add(currentNumber, queuedNumber);
